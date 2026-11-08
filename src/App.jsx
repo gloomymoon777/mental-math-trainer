@@ -404,11 +404,11 @@ function App() {
                           >
                             <div className = "level-header">
                               <p className="level-title">level {lvl}</p>
-                              <img src = {completed ? (darkmode ? "/src/assets/check-dark.png" : "/src/assets/check.png") 
+                              <img src = {completed ? (darkmode ? "./src/assets/check-dark.png" : "./src/assets/check.png") 
                                           : !unlocked 
-                                            ? (darkmode ? "/src/assets/lock-dark.png" : "/src/assets/lock.png") 
+                                            ? (darkmode ? "./src/assets/lock-dark.png" : "./src/assets/lock.png") 
                                           : lvl === opProgress.unlockedLevel 
-                                              ? (darkmode ? "/src/assets/current-dark.png": "/src/assets/current.png") : null} className="level-icon" alt=""/>
+                                              ? (darkmode ? "./src/assets/current-dark.png": "./src/assets/current.png") : null} className="level-icon" alt=""/>
                             </div>
                             <span className="level-record">
                               best: {formatTrainingTime(record?.bestTime)}
