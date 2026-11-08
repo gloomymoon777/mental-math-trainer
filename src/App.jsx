@@ -549,9 +549,9 @@ function App() {
             <div className = 'tip-category'>
               <h3>addition</h3>
               <div className = "tip">
-                <h4>adding numbers left to right </h4>
+                <h4>adding numbers left to right</h4>
                 <p> 
-                  add the second number to the first, starting from the highest units and working left to right  <br />
+                  add the second number to the first, starting from the highest units and working left to right!<br />
                 </p>
                 <p className="example-eq">47 + 36 <br />⤷ 47 + 30 = 77 <br />⤷ 77 + 6 = 83</p>
                 <p className="example-eq">259 + 586 <br />⤷ 259 + 500 = 759 <br />⤷ 759 + 80 = 839 
