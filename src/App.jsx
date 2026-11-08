@@ -1,6 +1,15 @@
 import { useState, useEffect, useRef } from 'react'
 import './App.css'
 
+import check from './assets/check.png'
+import darkcheck from './assets/check-dark.png'
+import current from './assets/current.png'
+import darkcurrent from './assets/current-dark.png'
+import lock from './assets/lock.png'
+import darklock from './assets/lock-dark.png'
+import ecliptic from './assets/ecliptic.png'
+import darkecliptic from './assets/ecliptic-dark.png'
+
 function App() {
 
   // setup stuff
@@ -404,11 +413,11 @@ function App() {
                           >
                             <div className = "level-header">
                               <p className="level-title">level {lvl}</p>
-                              <img src = {completed ? (darkmode ? "./assets/check-dark.png" : "./assets/check.png") 
+                              <img src = {completed ? (darkmode ? darkcheck : check) 
                                           : !unlocked 
-                                            ? (darkmode ? "./assets/lock-dark.png" : "./assets/lock.png") 
+                                            ? (darkmode ? darklock : lock) 
                                           : lvl === opProgress.unlockedLevel 
-                                              ? (darkmode ? "./assets/current-dark.png": "./assets/current.png") : null} className="level-icon" alt=""/>
+                                              ? (darkmode ? darkcurrent: current) : null} className="level-icon" alt=""/>
                             </div>
                             <span className="level-record">
                               best: {formatTrainingTime(record?.bestTime)}
@@ -623,7 +632,7 @@ function App() {
               <br /><br />hope you have fun practicing / looking around .𖥔 ݁ ˖๋ ࣭ ⭑ and remember-- you can be anything you want to be ♡
             </p>
             </div>
-            <img src = {darkmode ? "/src/assets/ecliptic-dark.png" : "/src/assets/ecliptic.png"} className="ecliptic" alt=""/>
+            <img src = {darkmode ? darkecliptic : ecliptic} className="ecliptic" alt=""/>
           </section>
         </main>
       )}
